@@ -29,7 +29,7 @@ class SpeechToTextViewController: UIViewController {
         super.viewWillAppear(animated)
         self.myTextView.layer.cornerRadius = 5
         self.myTextView.text = "당신의 감정이 배경화면에 표시됩니다. 마이크를 클릭하고 말을 하면 당신의 감정을 분석해드립니다."
-        self.stateLabel.text = "말하기"
+        self.stateLabel.text = "녹음하기"
     }
     
     @IBAction func speechToText(_ sender: Any) {
@@ -37,19 +37,20 @@ class SpeechToTextViewController: UIViewController {
             audioEngine.stop()
             recognitionRequest?.endAudio()
             translationButton.isEnabled = false
-            self.stateLabel.text = "마이크를 클릭하고 말을 하면 당신의 감정을 분석해드립니다"
+            self.stateLabel.text = "다시녹음하기"
             translationButton.isSelected = false
-            
         } else {
             startRecording()
-            stateLabel.text = "말해보슈"
+            stateLabel.text = "녹음중지"
             translationButton.isSelected = true
         }
     }
     
     @IBAction func analysisButtonHandler(_ sender: Any) {
+//        guard let text = myTextView.text, text.isEmpty else { return }
         let sb = UIStoryboard.init(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "AnalysisViewController") as! AnalysisViewController
+//        vc.toAnalysisObject = text
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
