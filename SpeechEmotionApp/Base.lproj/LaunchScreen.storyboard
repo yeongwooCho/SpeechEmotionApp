@@ -16,18 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오빤 그게 문제야" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8w-gM-U47">
-                                <rect key="frame" x="61.5" y="426" width="291" height="54"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-fW-PXn">
+                                <rect key="frame" x="40" y="375.5" width="334" height="155.5"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="i8w-gM-U47" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Pdp-Jc-HHa"/>
-                            <constraint firstItem="i8w-gM-U47" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Wny-Ql-UpE"/>
+                            <constraint firstItem="Apj-fW-PXn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="3wW-1Q-bQb"/>
+                            <constraint firstItem="Apj-fW-PXn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="U78-aR-rc9"/>
+                            <constraint firstItem="Apj-fW-PXn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="j4a-No-F4Q"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +35,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="launchScreen" width="436" height="155.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

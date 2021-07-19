@@ -8,22 +8,26 @@
 import UIKit
 
 class SignInViewController: UIViewController {
+    
+    let chatGroupViewController = ChatGroupViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func johnButtonTapped(_ sender: UIButton) {
+        FirebaseDataService.instance.signIn(email: "jyy0223@naver.com", password: "1234qwer") {
+            self.openChattingView()
+        }
     }
-    */
 
+    @IBAction func parkButtonTapped(_ sender: UIButton) {
+        FirebaseDataService.instance.signIn(email: "thisisho@naver.com", password: "1234qwer") {
+            self.openChattingView()
+        }
+    }
+
+    func openChattingView() {
+        self.performSegue(withIdentifier: "chatGroup", sender: nil)
+    }
 }

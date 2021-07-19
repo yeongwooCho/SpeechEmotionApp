@@ -3,27 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3D2A586C2689B65400E90D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A586B2689B65400E90D30 /* AppDelegate.swift */; };
 		3D2A586E2689B65400E90D30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A586D2689B65400E90D30 /* SceneDelegate.swift */; };
-		3D2A58702689B65400E90D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A586F2689B65400E90D30 /* ViewController.swift */; };
 		3D2A58732689B65400E90D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2A58712689B65400E90D30 /* Main.storyboard */; };
 		3D2A58752689B65500E90D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2A58742689B65500E90D30 /* Assets.xcassets */; };
 		3D2A58782689B65500E90D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2A58762689B65500E90D30 /* LaunchScreen.storyboard */; };
+		3D7ED2A8268AAF3E00E0E349 /* TextToSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED2A7268AAF3E00E0E349 /* TextToSpeechViewController.swift */; };
+		3D7ED2AA268AAF4F00E0E349 /* SpeechToTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ED2A9268AAF4F00E0E349 /* SpeechToTextViewController.swift */; };
+		3D88330F2693E3FE0088106D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D88330E2693E3FE0088106D /* User.swift */; };
+		3D8833112693E40A0088106D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8833102693E40A0088106D /* Group.swift */; };
+		3D8833132693E41C0088106D /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8833122693E41C0088106D /* ChatMessage.swift */; };
+		3DAF6050268F007D006CD3B1 /* FirebaseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF604F268F007D006CD3B1 /* FirebaseDataService.swift */; };
+		3DAF6056268F02E6006CD3B1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF6055268F02E6006CD3B1 /* SignInViewController.swift */; };
+		3DAF605C268F0500006CD3B1 /* ChatGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF605B268F0500006CD3B1 /* ChatGroupViewController.swift */; };
+		3DAF605F268F071D006CD3B1 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF605E268F071D006CD3B1 /* UserListViewController.swift */; };
+		3DAF6061268F09CF006CD3B1 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF6060268F09CF006CD3B1 /* ChatRoomViewController.swift */; };
+		3DBF091E2692AD4B002E33A9 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF091D2692AD4B002E33A9 /* GroupCell.swift */; };
+		3DBF09202692ADF0002E33A9 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF091F2692ADF0002E33A9 /* UserCell.swift */; };
+		3DBF09222692AE45002E33A9 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF09212692AE45002E33A9 /* ChatMessageCell.swift */; };
+		3DCB0A4026928E0C006881BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DCB0A3F26928E0C006881BD /* GoogleService-Info.plist */; };
+		3DEF9A97268B1033004B43C9 /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEF9A96268B1033004B43C9 /* AnalysisViewController.swift */; };
+		824F7E9A214E81220CEF275A /* Pods_SpeechEmotionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DB76758BC00FFC0BF3122D /* Pods_SpeechEmotionApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D2A58682689B65400E90D30 /* SpeechEmotionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechEmotionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2A586B2689B65400E90D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D2A586D2689B65400E90D30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D2A586F2689B65400E90D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D2A58722689B65400E90D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D2A58742689B65500E90D30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2A58772689B65500E90D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D2A58792689B65500E90D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D7ED2A7268AAF3E00E0E349 /* TextToSpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechViewController.swift; sourceTree = "<group>"; };
+		3D7ED2A9268AAF4F00E0E349 /* SpeechToTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextViewController.swift; sourceTree = "<group>"; };
+		3D88330E2693E3FE0088106D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3D8833102693E40A0088106D /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		3D8833122693E41C0088106D /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		3DAF604F268F007D006CD3B1 /* FirebaseDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataService.swift; sourceTree = "<group>"; };
+		3DAF6055268F02E6006CD3B1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3DAF605B268F0500006CD3B1 /* ChatGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupViewController.swift; sourceTree = "<group>"; };
+		3DAF605E268F071D006CD3B1 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		3DAF6060268F09CF006CD3B1 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		3DBF091D2692AD4B002E33A9 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		3DBF091F2692ADF0002E33A9 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		3DBF09212692AE45002E33A9 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		3DCB0A3F26928E0C006881BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DEF9A96268B1033004B43C9 /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		4F8CA737AFE1A8CCB1F9BFC0 /* Pods-SpeechEmotionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechEmotionApp.debug.xcconfig"; path = "Target Support Files/Pods-SpeechEmotionApp/Pods-SpeechEmotionApp.debug.xcconfig"; sourceTree = "<group>"; };
+		84DB76758BC00FFC0BF3122D /* Pods_SpeechEmotionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechEmotionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEE8EB457FD650DE2CC1391 /* Pods-SpeechEmotionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechEmotionApp.release.xcconfig"; path = "Target Support Files/Pods-SpeechEmotionApp/Pods-SpeechEmotionApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824F7E9A214E81220CEF275A /* Pods_SpeechEmotionApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +75,8 @@
 			children = (
 				3D2A586A2689B65400E90D30 /* SpeechEmotionApp */,
 				3D2A58692689B65400E90D30 /* Products */,
+				C9251B5A229ED3E5A4AA6F29 /* Pods */,
+				4D076C785445DABAE4E12A7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +91,126 @@
 		3D2A586A2689B65400E90D30 /* SpeechEmotionApp */ = {
 			isa = PBXGroup;
 			children = (
+				3DCB0A3F26928E0C006881BD /* GoogleService-Info.plist */,
+				3DAF604E268F006B006CD3B1 /* Firebase */,
+				3DAF605D268F070C006CD3B1 /* User */,
+				3D8833172693E4A70088106D /* Group */,
+				3D8833192693E51B0088106D /* ChatMessage */,
+				3D8833152693E46E0088106D /* Register */,
+				3DAF6054268F02CD006CD3B1 /* Login */,
+				3DAF6051268F0251006CD3B1 /* Chat */,
 				3D2A586B2689B65400E90D30 /* AppDelegate.swift */,
 				3D2A586D2689B65400E90D30 /* SceneDelegate.swift */,
-				3D2A586F2689B65400E90D30 /* ViewController.swift */,
 				3D2A58712689B65400E90D30 /* Main.storyboard */,
 				3D2A58742689B65500E90D30 /* Assets.xcassets */,
 				3D2A58762689B65500E90D30 /* LaunchScreen.storyboard */,
 				3D2A58792689B65500E90D30 /* Info.plist */,
+				3D7ED2A7268AAF3E00E0E349 /* TextToSpeechViewController.swift */,
+				3D7ED2A9268AAF4F00E0E349 /* SpeechToTextViewController.swift */,
+				3DEF9A96268B1033004B43C9 /* AnalysisViewController.swift */,
 			);
 			path = SpeechEmotionApp;
+			sourceTree = "<group>";
+		};
+		3D8833142693E4360088106D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D88330E2693E3FE0088106D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D8833152693E46E0088106D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		3D8833172693E4A70088106D /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF091D2692AD4B002E33A9 /* GroupCell.swift */,
+				3D8833182693E4DB0088106D /* Model */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		3D8833182693E4DB0088106D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8833102693E40A0088106D /* Group.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D8833192693E51B0088106D /* ChatMessage */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF09212692AE45002E33A9 /* ChatMessageCell.swift */,
+				3D88331A2693E5310088106D /* Model */,
+			);
+			path = ChatMessage;
+			sourceTree = "<group>";
+		};
+		3D88331A2693E5310088106D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8833122693E41C0088106D /* ChatMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DAF604E268F006B006CD3B1 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF604F268F007D006CD3B1 /* FirebaseDataService.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		3DAF6051268F0251006CD3B1 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF605B268F0500006CD3B1 /* ChatGroupViewController.swift */,
+				3DAF6060268F09CF006CD3B1 /* ChatRoomViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		3DAF6054268F02CD006CD3B1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF6055268F02E6006CD3B1 /* SignInViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3DAF605D268F070C006CD3B1 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF091F2692ADF0002E33A9 /* UserCell.swift */,
+				3D8833142693E4360088106D /* Model */,
+				3DAF605E268F071D006CD3B1 /* UserListViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		4D076C785445DABAE4E12A7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84DB76758BC00FFC0BF3122D /* Pods_SpeechEmotionApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9251B5A229ED3E5A4AA6F29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F8CA737AFE1A8CCB1F9BFC0 /* Pods-SpeechEmotionApp.debug.xcconfig */,
+				9FEE8EB457FD650DE2CC1391 /* Pods-SpeechEmotionApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D2A587C2689B65500E90D30 /* Build configuration list for PBXNativeTarget "SpeechEmotionApp" */;
 			buildPhases = (
+				66151D5E4AC8F18E3F5A3160 /* [CP] Check Pods Manifest.lock */,
 				3D2A58642689B65400E90D30 /* Sources */,
 				3D2A58652689B65400E90D30 /* Frameworks */,
 				3D2A58662689B65400E90D30 /* Resources */,
+				5F44A67A28A18B0FB67F9F1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCB0A4026928E0C006881BD /* GoogleService-Info.plist in Resources */,
 				3D2A58782689B65500E90D30 /* LaunchScreen.storyboard in Resources */,
 				3D2A58752689B65500E90D30 /* Assets.xcassets in Resources */,
 				3D2A58732689B65400E90D30 /* Main.storyboard in Resources */,
@@ -132,14 +281,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F44A67A28A18B0FB67F9F1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechEmotionApp/Pods-SpeechEmotionApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechEmotionApp/Pods-SpeechEmotionApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechEmotionApp/Pods-SpeechEmotionApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66151D5E4AC8F18E3F5A3160 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechEmotionApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D2A58642689B65400E90D30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2A58702689B65400E90D30 /* ViewController.swift in Sources */,
+				3D8833132693E41C0088106D /* ChatMessage.swift in Sources */,
+				3DAF605F268F071D006CD3B1 /* UserListViewController.swift in Sources */,
+				3D7ED2AA268AAF4F00E0E349 /* SpeechToTextViewController.swift in Sources */,
+				3D8833112693E40A0088106D /* Group.swift in Sources */,
+				3D7ED2A8268AAF3E00E0E349 /* TextToSpeechViewController.swift in Sources */,
+				3DBF09222692AE45002E33A9 /* ChatMessageCell.swift in Sources */,
+				3DAF6050268F007D006CD3B1 /* FirebaseDataService.swift in Sources */,
+				3DAF6056268F02E6006CD3B1 /* SignInViewController.swift in Sources */,
+				3DBF091E2692AD4B002E33A9 /* GroupCell.swift in Sources */,
+				3D88330F2693E3FE0088106D /* User.swift in Sources */,
+				3DBF09202692ADF0002E33A9 /* UserCell.swift in Sources */,
 				3D2A586C2689B65400E90D30 /* AppDelegate.swift in Sources */,
 				3D2A586E2689B65400E90D30 /* SceneDelegate.swift in Sources */,
+				3DAF605C268F0500006CD3B1 /* ChatGroupViewController.swift in Sources */,
+				3DEF9A97268B1033004B43C9 /* AnalysisViewController.swift in Sources */,
+				3DAF6061268F09CF006CD3B1 /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +487,7 @@
 		};
 		3D2A587D2689B65500E90D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F8CA737AFE1A8CCB1F9BFC0 /* Pods-SpeechEmotionApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +507,7 @@
 		};
 		3D2A587E2689B65500E90D30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEE8EB457FD650DE2CC1391 /* Pods-SpeechEmotionApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
