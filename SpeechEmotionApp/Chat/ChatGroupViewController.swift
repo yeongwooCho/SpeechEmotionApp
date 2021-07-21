@@ -14,7 +14,7 @@ class ChatGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchChatGroupList()
+        self.fetchChatGroupList()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -82,10 +82,24 @@ extension ChatGroupViewController: UICollectionViewDelegate {
 //        chatVC.groupKey = sender as? String
         
         
-        let sb = UIStoryboard.init(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewController(identifier: "ChatRoomViewController") as! ChatRoomViewController
-        vc.modalPresentationStyle = .fullScreen
-        vc.groupKey = groups[indexPath.item].key
-        present(vc, animated: true, completion: nil)
+//        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+//        let vc = sb.instantiateViewController(identifier: "ChatRoomViewController") as! ChatRoomViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        vc.groupKey = groups[indexPath.item].key
+//        present(vc, animated: true, completion: nil)
+    }
+}
+
+extension ChatGroupViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width: CGFloat = view.bounds.width
+        let height: CGFloat = 100
+        return CGSize(width: width, height: height)
+    }
+}
+
+class GroupCell: UICollectionViewCell {
+    func updateUI(at index: Group) {
+        
     }
 }
