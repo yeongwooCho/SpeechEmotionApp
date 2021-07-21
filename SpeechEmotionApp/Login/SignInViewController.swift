@@ -9,7 +9,7 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
-    let chatGroupViewController = ChatGroupViewController()
+//    let chatGroupViewController = ChatGroupViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
