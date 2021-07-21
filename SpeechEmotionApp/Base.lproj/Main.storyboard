@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3W1-tD-SrX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fbb-0p-viU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -9,6 +9,78 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--First View Controller-->
+        <scene sceneID="HDd-oC-SMV">
+            <objects>
+                <viewController id="fbb-0p-viU" customClass="FirstViewController" customModule="SpeechEmotionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JUV-UR-gCr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EEe-SF-iNs">
+                                <rect key="frame" x="60" y="194" width="294" height="294"/>
+                                <color key="tintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EEe-SF-iNs" secondAttribute="height" multiplier="1:1" id="4kL-cu-yjB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh7-bM-mD0">
+                                <rect key="frame" x="60" y="586" width="294" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYN-V1-HAk">
+                                <rect key="frame" x="60" y="654" width="294" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="회원가입">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButtonHandler:" destination="fbb-0p-viU" eventType="touchUpInside" id="C9t-0x-Rha"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fg0-pB-9fa"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sh7-bM-mD0" firstAttribute="centerX" secondItem="Fg0-pB-9fa" secondAttribute="centerX" id="1Bg-jP-zlD"/>
+                            <constraint firstItem="EEe-SF-iNs" firstAttribute="top" secondItem="Fg0-pB-9fa" secondAttribute="top" constant="150" id="26M-RQ-NB8"/>
+                            <constraint firstItem="sh7-bM-mD0" firstAttribute="top" secondItem="EEe-SF-iNs" secondAttribute="bottom" constant="98" id="K4w-Dl-HMT"/>
+                            <constraint firstItem="EEe-SF-iNs" firstAttribute="leading" secondItem="Fg0-pB-9fa" secondAttribute="leading" constant="60" id="Kot-Jn-hoW"/>
+                            <constraint firstItem="aYN-V1-HAk" firstAttribute="leading" secondItem="sh7-bM-mD0" secondAttribute="leading" id="Ors-ad-iWI"/>
+                            <constraint firstItem="aYN-V1-HAk" firstAttribute="centerX" secondItem="sh7-bM-mD0" secondAttribute="centerX" id="TrX-gB-75b"/>
+                            <constraint firstItem="EEe-SF-iNs" firstAttribute="centerX" secondItem="Fg0-pB-9fa" secondAttribute="centerX" id="mgt-aX-InC"/>
+                            <constraint firstItem="aYN-V1-HAk" firstAttribute="top" secondItem="sh7-bM-mD0" secondAttribute="bottom" constant="20" id="qPW-wx-Oo1"/>
+                            <constraint firstItem="sh7-bM-mD0" firstAttribute="leading" secondItem="EEe-SF-iNs" secondAttribute="leading" id="uoi-mm-f3D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="EEe-SF-iNs" id="p3Y-qa-TTo"/>
+                        <outlet property="loginButton" destination="sh7-bM-mD0" id="6AZ-Wl-b1B"/>
+                        <outlet property="registerButton" destination="aYN-V1-HAk" id="5Eh-FT-dM9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDb-6Y-Ukc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="-773"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g2e-NY-7YG">
+            <objects>
+                <viewController id="kk5-Ta-T3Q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="An0-Hu-SUy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VMf-ZV-b4J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdk-c5-gDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="-773"/>
+        </scene>
         <!--Speech To Text View Controller-->
         <scene sceneID="Wvf-so-Zrt">
             <objects>
@@ -370,7 +442,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qWs-3i-Ca6">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="avK-A1-EeL">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="avK-A1-EeL">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -496,8 +568,9 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="128"/>
                                         <connections>
-                                            <outlet property="emailLabel" destination="Nr0-Zg-INW" id="z2K-up-s7b"/>
+                                            <outlet property="emailLabel" destination="Nr0-Zg-INW" id="UnC-Zs-SJj"/>
                                             <outlet property="userNameLabel" destination="m6e-WD-PWv" id="c6C-6Q-mrA"/>
+                                            <outlet property="usernameLabel" destination="m6e-WD-PWv" id="Iif-F5-V9K"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -580,6 +653,7 @@
         <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="doc.plaintext.fill" catalog="system" width="115" height="128"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="mic.slash.fill" catalog="system" width="108" height="128"/>
         <image name="opticaldiscdrive.fill" catalog="system" width="128" height="87"/>
