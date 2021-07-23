@@ -79,6 +79,45 @@ class RegisterViewController: UIViewController {
             }
         }
     }
+    
+    // textField에 유효한 값이 들어오지 않으면 원하는 컨스트레인트를 변화시킨다?
+    func normalizationCheck(_ textField: UITextField) {
+        var regExKinds: String?
+        var hintConstraint: NSLayoutConstraint?
+        guard let id = textField.restorationIdentifier else { return }
+        switch id {
+        case "nameTextField":
+            regExKinds = "nameRegEx"
+            hintConstraint = nameHintLabelHeight
+        case "emailTextField":
+            regExKinds = "emailRegEx"
+            hintConstraint = emailHintLabelHeight
+        case "passwordTextField":
+            regExKinds = "passwordRegEx"
+            hintConstraint = passwordHintLabelHeight
+        case "passwordCheckTextField":
+            regExKinds = "passwordRegEx"
+            hintConstraint = passwordCheckHintLabelHeight
+        default:
+            return
+        }
+        
+        if Normalization.isValidRegEx(regExKinds: regExKinds, objectString: textField.text) {
+            hintConstraint?.constant = 0
+        } else {
+            hintConstraint?.constant = 18
+        }
+    }
+    
+    func isEqualPassword() {
+        DispatchQueue.main.async {
+            if self.passwordTextField.text == self.passwordCheckTextField.text {
+                self.passwordCheckHintLabelHeight.constant = 0
+            } else {
+                self.passwordCheckHintLabelHeight.constant = 18
+            }
+        }
+    }
 }
 
 extension RegisterViewController: UITextFieldDelegate {
@@ -88,6 +127,10 @@ extension RegisterViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.underlined(viewSize: self.view.bounds.width, color: UIColor.systemGray)
+        self.normalizationCheck(textField) // 문자열 정규식 체크
+        if textField.restorationIdentifier == "passwordCheckTextField" {
+            self.isEqualPassword() // 비밀번호 일치여부
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -108,6 +151,6 @@ extension RegisterViewController {
         } else {
             scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
         }
-        print("---> Keyboard End Frame: \(keyboardFrame)")
+//        print("---> Keyboard End Frame: \(keyboardFrame)")
     }
 }
