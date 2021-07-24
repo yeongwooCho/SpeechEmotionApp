@@ -46,6 +46,24 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonHandler(_ sender: Any) {
+        // 모든 TextField가 비어있을때 return
+        if passwordCheckTextField.text!.isEmpty || passwordTextField.text!.isEmpty || emailTextField.text!.isEmpty || nameTextField.text!.isEmpty {
+            return
+        }
+        
+        // Hint Label이 존재할때 return
+        if !(nameHintLabelHeight.constant == 0 &&
+            emailHintLabelHeight.constant == 0 &&
+            passwordHintLabelHeight.constant == 0 &&
+            passwordCheckHintLabelHeight.constant == 0) {
+            print("return할거야")
+            let alert = UIAlertController(title: "회원가입 불가능", message: "모든 정보를 올바으게 입력해주세요", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .destructive, handler: nil))
+            present(alert, animated: false, completion: nil)
+            return
+        }
+        
+        // 모든 TextField가 정상적인 값으로 입력되어 있을때
         let alert = UIAlertController(title: "회원가입 확인", message: "진짜 잘 확인했지?", preferredStyle: UIAlertController.Style.alert)
         let okAction = UIAlertAction(title: "그렇다!", style: .destructive) {_ in
             self.performSegue(withIdentifier: "completeRegister", sender: nil)
