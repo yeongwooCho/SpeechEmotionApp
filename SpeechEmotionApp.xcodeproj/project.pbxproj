@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D00AA1C26A9049A00789DDA /* Normalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00AA1B26A9049A00789DDA /* Normalization.swift */; };
 		3D2A586C2689B65400E90D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A586B2689B65400E90D30 /* AppDelegate.swift */; };
 		3D2A586E2689B65400E90D30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A586D2689B65400E90D30 /* SceneDelegate.swift */; };
 		3D2A58732689B65400E90D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2A58712689B65400E90D30 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D00AA1B26A9049A00789DDA /* Normalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Normalization.swift; sourceTree = "<group>"; };
 		3D2A58682689B65400E90D30 /* SpeechEmotionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechEmotionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2A586B2689B65400E90D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D2A586D2689B65400E90D30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				3D33F87726A68FD700B9DB35 /* UITextField.swift */,
 				3D33F87926A699FC00B9DB35 /* UIView.swift */,
+				3D00AA1B26A9049A00789DDA /* Normalization.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				3DAF6050268F007D006CD3B1 /* FirebaseDataService.swift in Sources */,
 				3DAF6056268F02E6006CD3B1 /* SignInViewController.swift in Sources */,
 				3D33F87126A6580D00B9DB35 /* FirstViewController.swift in Sources */,
+				3D00AA1C26A9049A00789DDA /* Normalization.swift in Sources */,
 				3D88330F2693E3FE0088106D /* User.swift in Sources */,
 				3D2A586C2689B65400E90D30 /* AppDelegate.swift in Sources */,
 				3D33F87526A6701C00B9DB35 /* RegisterViewController.swift in Sources */,
