@@ -7,16 +7,3 @@ A chatting Application that analyzes voice and text and displays emotional state
 + Firebase Auth
 + Login, Register Exception Handling
 + User Data Management
-
-
-+ AVPlayer
-+ UIInterfaceOrientationMask
-
-+ Networking through SearchAPI
-+ UISearchBarDelegate
-
-+ Firebase
-
-+ ContainerView control in ScrollView
-
-
