@@ -7,6 +7,6 @@ A chatting Application that analyzes voice and text and displays emotional state
 + Firebase Auth, Realtime Database
 + Login, Register Exception Handling
 + User Data Management
-+ Chatting funcction by CollectionView
++ Chatting function by CollectionView
 + MVVM Design Patten
 + Sentiment Analysis by Speech & Text
